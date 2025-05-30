@@ -1,0 +1,147 @@
+
+
+client id - facedc835c6546048d0ad9d032ca3c56
+
+Client secret id - d470471c66e740c2b927e63bdbb58f64
+
+facedc835c6546048d0ad9d032ca3c56:d470471c66e740c2b927e63bdbb58f64
+
+scope - playlist-read-private playlist-read-collaborative playlist-modify-private playlist-modify-public
+
+working url - https://accounts.spotify.com/en/authorize?client_id=facedc835c6546048d0ad9d032ca3c56&response_type=code&redirect_uri=http://127.0.0.1:8888/callback&scope=playlist-read-private%20playlist-read-collaborative%20playlist-modify-private%20playlist-modify-public&state=aZ7dK1mX9qLp3Efj
+
+redirect url after enter -
+
+http://127.0.0.1:8888/callback?code=AQA5ORZf_wuQEYiPQebYjU4nv7xt6ns2VftRQErq2-RpVuRnvwpJ4YO-XwX3JfgDd2UrkAPUszZcPEgz0u3bggoPh1Q7XBvI_FkR0upj2DLtGbfEPnLNbjFOU1Gyk-6Vk9jA_1pU683cU4aBYOsjlJ2i6ebDxhFZaMOW4ameXFagMKf2bdM6glGJUPpX0OPpesE0xrjT8jd62HP-0gjmL1i9mG2oNi09Kb_jEITIEQLYLvaPzVBqu4CjgMNEQJ-oyXblsVTrw-lQM6FF9wgKAcnLfJ6jcinDKfxeAJGxkZv99cjw265m&state=aZ7dK1mX9qLp3Efj
+
+auth code - AQA5ORZf_wuQEYiPQebYjU4nv7xt6ns2VftRQErq2-RpVuRnvwpJ4YO-XwX3JfgDd2UrkAPUszZcPEgz0u3bggoPh1Q7XBvI_FkR0upj2DLtGbfEPnLNbjFOU1Gyk-6Vk9jA_1pU683cU4aBYOsjlJ2i6ebDxhFZaMOW4ameXFagMKf2bdM6glGJUPpX0OPpesE0xrjT8jd62HP-0gjmL1i9mG2oNi09Kb_jEITIEQLYLvaPzVBqu4CjgMNEQJ-oyXblsVTrw-lQM6FF9wgKAcnLfJ6jcinDKfxeAJGxkZv99cjw265m
+
+-----FETCH ACCESS TOKEN --
+
+{
+    "access_token": "BQCkjTff45J1kWaZym5OqgbSV4Q2nF0Lcxoaz0IifMrcG_Y3qVQx8XGwdmtUQhPH3EEf90-STy-r602ImYw1f5K5YOMpZobHjieO3s50WvcEy5LS2u46MEowckMuBtcdmIAXfF132pPrFwTdgmoFbtGid3uSzN5AZPvA170MyK41aTurOX7tMuF5YLiSbM_XA902r5V9HEskgKrgarSxh8DnX_O93KOjWjoXShmfXIeXoZOy8ZYH3OqlM5efjahjizBaXsHVwH-Vyuonj9GNMIxYvwqijodgygFnsCtrpijPtWZ9lmKKhlvy",
+    "token_type": "Bearer",
+    "expires_in": 3600,
+    "refresh_token": "AQALMHPEPHpuGROMP8lbNkTLgHBoW5dtWQ0q9TMEBw4aM-8FZDGWQaeA8EvAcg4BUuXpskTxvSPHy_lXwtGMGCqFdbmL9BuBzP6S4gcKwjR77a5CEuQTNLlMfRLvcFXz3v4",
+    "scope": "playlist-read-private playlist-read-collaborative playlist-modify-private playlist-modify-public"
+}
+
+
+---RENEW ACCESS TOKEN BY REFRESH TOKEN ----
+
+{
+    "access_token": "BQDMsNn54nB6FLSnxa1eFLS4v45OmnwW27uplUINBjemFI3EJm5rcB3vwfGZCUoy_YrX_rusLHKNgEAFGc-W7385wx1AgQVJRMiosNoa3QeN9QCPJYnhoWpQJM_NsHySH1Mudl3WemdVs_DicIyz4ywDXoaJwkn-cksJe-imH5ULGpA5e0Q9MRta8TBp76VjaHQOiCUliwMlntSbB0-NGYqM0sutcLOrVJmhCxjdMlQVDALsnPS8WBgBNYi5r1RS-9r-YooxGXI30DedndTFmKzbRtH5HcAssu0XAmn7tnsITyPxAR0eywAM",
+    "token_type": "Bearer",
+    "expires_in": 3600,
+    "scope": "playlist-read-private playlist-read-collaborative playlist-modify-private playlist-modify-public"
+}
+
+
+my profile
+----------
+{
+  "country": "IN",
+  "display_name": "Biswajit sahoo",
+  "email": "biswajitsahoo2520@gmail.com",
+  "explicit_content": {
+    "filter_enabled": false,
+    "filter_locked": false
+  },
+  "external_urls": {
+    "spotify": "https://open.spotify.com/user/313yy42xopvfoz54qbco5ajy732e"
+  },
+  "followers": {
+    "href": null,
+    "total": 0
+  },
+  "href": "https://api.spotify.com/v1/users/313yy42xopvfoz54qbco5ajy732e",
+  "id": "313yy42xopvfoz54qbco5ajy732e",
+  "images": [],
+  "product": "free",
+  "type": "user",
+  "uri": "spotify:user:313yy42xopvfoz54qbco5ajy732e"
+}
+
+---CREATE PLAYLIST ---
+
+{
+    "collaborative": false,
+    "description": "New playlist description",
+    "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/7542qmRILhwq2F14xcxEBY"
+    },
+    "followers": {
+        "href": null,
+        "total": 0
+    },
+    "href": "https://api.spotify.com/v1/playlists/7542qmRILhwq2F14xcxEBY",
+    "id": "7542qmRILhwq2F14xcxEBY",
+    "images": [],
+    "primary_color": null,
+    "name": "New Playlist",
+    "type": "playlist",
+    "uri": "spotify:playlist:7542qmRILhwq2F14xcxEBY",
+    "owner": {
+        "href": "https://api.spotify.com/v1/users/313yy42xopvfoz54qbco5ajy732e",
+        "id": "313yy42xopvfoz54qbco5ajy732e",
+        "type": "user",
+        "uri": "spotify:user:313yy42xopvfoz54qbco5ajy732e",
+        "display_name": null,
+        "external_urls": {
+            "spotify": "https://open.spotify.com/user/313yy42xopvfoz54qbco5ajy732e"
+        }
+    },
+    "public": false,
+    "snapshot_id": "AAAAAlyU8rMnOEDgctzs/MEltzGQyO/Z",
+    "tracks": {
+        "limit": 100,
+        "next": null,
+        "offset": 0,
+        "previous": null,
+        "href": "https://api.spotify.com/v1/playlists/7542qmRILhwq2F14xcxEBY/tracks",
+        "total": 0,
+        "items": []
+    }
+}
+
+
+-----GET PLAYLIST ---
+{
+    "collaborative": false,
+    "description": "New playlist description",
+    "external_urls": {
+        "spotify": "https://open.spotify.com/playlist/7542qmRILhwq2F14xcxEBY"
+    },
+    "followers": {
+        "href": null,
+        "total": 0
+    },
+    "href": "https://api.spotify.com/v1/playlists/7542qmRILhwq2F14xcxEBY",
+    "id": "7542qmRILhwq2F14xcxEBY",
+    "images": null,
+    "name": "New Playlist",
+    "owner": {
+        "display_name": "Biswajit sahoo",
+        "external_urls": {
+            "spotify": "https://open.spotify.com/user/313yy42xopvfoz54qbco5ajy732e"
+        },
+        "href": "https://api.spotify.com/v1/users/313yy42xopvfoz54qbco5ajy732e",
+        "id": "313yy42xopvfoz54qbco5ajy732e",
+        "type": "user",
+        "uri": "spotify:user:313yy42xopvfoz54qbco5ajy732e"
+    },
+    "primary_color": null,
+    "public": true,
+    "snapshot_id": "AAAAAUWE55KMAkD6Gxp5NJj3wBD+m2Ba",
+    "tracks": {
+        "href": "https://api.spotify.com/v1/playlists/7542qmRILhwq2F14xcxEBY/tracks?offset=0&limit=0",
+        "items": [],
+        "limit": 0,
+        "next": null,
+        "offset": 0,
+        "previous": null,
+        "total": 0
+    },
+    "type": "playlist",
+    "uri": "spotify:playlist:7542qmRILhwq2F14xcxEBY"
+}
