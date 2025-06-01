@@ -80,20 +80,20 @@ public class PlaylistTest {
     @Test
     public void shouldNotBeAbleToCreatePlaylistWithName(){
 
-        Playlist requestPlaylist = playlistBuilder("","Biswajit playlist description", false )
+        Playlist requestPlaylist = playlistBuilder("","Biswajit playlist description", false );
         Response response = PlaylistApi.post(requestPlaylist);
-        assertStatusCode(response.statusCode(), 401);
-        assertError(response.as(Error.class) , 401 , "Missing required field: name" );
+        assertStatusCode(response.statusCode(), 400);
+        assertError(response.as(Error.class) , 400 , "Missing required field: name" );
     }
 
     @Test
     public  void shouldNotBeAbleToCreatePlaylistWithExpiredToken(){
 
         String invalid_token = "12345";
-        Playlist requestPlaylist =  playlistBuilder("Biswajit Playlist 1 may26", "Biswajit playlist description", false)
+        Playlist requestPlaylist =  playlistBuilder("Biswajit Playlist 1 may26", "Biswajit playlist description", false);
         Response response = PlaylistApi.post(invalid_token , requestPlaylist);
         assertStatusCode(response.statusCode(),401);
-        assertError(response.as(Error.class),401 , "Invalid access token");
+        assertError(response.as(Error.class),401, "Invalid access token");
     }
 
 

@@ -32,6 +32,10 @@ public class ConfigLoader {
         }
     }
 
+    public String getAuth_grant_type(){
+        return properties.getProperty("auth_grant_type");
+    }
+
     public String getGrantType(){
         String prop = properties.getProperty("grant_type");
         if (prop != null){
@@ -47,6 +51,34 @@ public class ConfigLoader {
             return prop;
         }else {
             throw new RuntimeException("refresh token is not specified for config.properties file");
+        }
+    }
+
+    public void setRefreshToken(String refreshToken){
+        properties.setProperty("refresh_token",refreshToken);
+    }
+
+    public void setAccessToken(String accessToken){
+        properties.setProperty("access_token",accessToken);
+    }
+
+    public String getAuthCode(){
+        String prop = properties.getProperty("auth_code");
+        if (prop != null){
+            return prop;
+        }
+        else {
+            throw new RuntimeException(("auth code is not specified in config.properties file"));
+        }
+    }
+
+    public String getRedirectUrl(){
+        String prop = properties.getProperty("redirect_uri");
+        if (prop != null){
+            return prop;
+        }
+        else {
+            throw new RuntimeException("Redirect URL is wrong");
         }
     }
 

@@ -7,8 +7,7 @@ import static com.Lone_soilder.api.Route.API;
 import java.util.HashMap;
 
 import static com.Lone_soilder.api.Route.TOKEN;
-import static com.Lone_soilder.api.SpecBuilder.getRequestSpec;
-import static com.Lone_soilder.api.SpecBuilder.getResponseSpec;
+import static com.Lone_soilder.api.SpecBuilder.*;
 import static io.restassured.RestAssured.given;
 
 public class RestResource {
@@ -27,13 +26,11 @@ public class RestResource {
     }
 
     public static Response postAccount(HashMap<String , String> formParams){
-        return given().
-                    baseUri("https://accounts.spotify.com").
-                    header("Authorization", "Basic ZmFjZWRjODM1YzY1NDYwNDhkMGFkOWQwMzJjYTNjNTY6ZDQ3MDQ3MWM2NmU3NDBjMmI5MjdlNjNiZGJiNThmNjQ").
-                    contentType(ContentType.URLENC).
+        return given(getAccountRequestSpec()).
                     formParams(formParams).
+                    //header("Authorization", "Basic "+"ZmFjZWRjODM1YzY1NDYwNDhkMGFkOWQwMzJjYTNjNTY6ZDQ3MDQ3MWM2NmU3NDBjMmI5MjdlNjNiZGJiNThmNjQ").
                 when().
-                    get(API+TOKEN).
+                    post(API+TOKEN).
                 then().
                     spec(SpecBuilder.getResponseSpec()).
                     extract().response();

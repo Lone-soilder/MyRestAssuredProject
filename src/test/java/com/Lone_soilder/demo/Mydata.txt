@@ -145,3 +145,5 @@ my profile
     "type": "playlist",
     "uri": "spotify:playlist:7542qmRILhwq2F14xcxEBY"
 }
+
+auth code = AQDrCOHJ413eWD5idcyjRYeSoHegA9G4sMyfstnEVQ3aLLPD_QkKNVmLDKSI9GyoFmoVzmbJZT_HX29e8VXH_D8T_CiYL4IvBJ35mV8aPloxnxXpO1FXXFEbubx5lQvGbjbk5kfcAEY4XydHwGo6w_k3qM5PymZ0k_JI_Zg0Td5jAsURS-LdzLqYLUrzAOdwc5ZA4TtRwAk749RFu9K3YSqN6T9mt3ShUk7mgUn1lfeXFCAXnPmL_QskfCiBP_ayv52sxBuASgM9iBGQp6lQC8PEw-pbTDZ7toJvmKN5tzyYVzQ53PQo

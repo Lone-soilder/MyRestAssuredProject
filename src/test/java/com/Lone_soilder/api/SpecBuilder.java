@@ -22,6 +22,14 @@ public class SpecBuilder {
         return  requestSpecBuilder.build();
     }
 
+    public static RequestSpecification getAccountRequestSpec(){
+        return  new RequestSpecBuilder().
+                setBaseUri("https://accounts.spotify.com").
+                setContentType(ContentType.URLENC).
+                addHeader("Authorization", "Basic "+"ZmFjZWRjODM1YzY1NDYwNDhkMGFkOWQwMzJjYTNjNTY6ZDQ3MDQ3MWM2NmU3NDBjMmI5MjdlNjNiZGJiNThmNjQ").
+                log(LogDetail.ALL).
+                build();
+    }
     public static ResponseSpecification getResponseSpec(){
         ResponseSpecBuilder responseSpecBuilder = new ResponseSpecBuilder().
                 log(LogDetail.ALL);

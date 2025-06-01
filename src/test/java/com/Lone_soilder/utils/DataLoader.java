@@ -10,7 +10,7 @@ public class DataLoader {
 
     private DataLoader() {
         try {
-            properties = PropertyUtils.propertyLoader("src/test/resources/config.properties") ;
+            properties = PropertyUtils.propertyLoader("src/test/resources/data.properties") ;
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
@@ -28,7 +28,7 @@ public class DataLoader {
         if (prop != null){
             return prop;
         }else {
-            throw new RuntimeException("get_playlist_id is not specified for config.properties file");
+            throw new RuntimeException("get_playlist_id is not specified for data.properties file");
         }
     }
 
@@ -38,7 +38,7 @@ public class DataLoader {
         if (prop != null){
             return prop;
         }else {
-            throw new RuntimeException("update_playlist_id is not specified for config.properties file");
+            throw new RuntimeException("update_playlist_id is not specified for data.properties file");
         }
     }
 

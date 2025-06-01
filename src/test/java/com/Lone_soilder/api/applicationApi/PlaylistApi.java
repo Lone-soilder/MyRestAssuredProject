@@ -11,18 +11,21 @@ import static com.Lone_soilder.api.TokenManager.getToken;
 
 public class PlaylistApi {
 
-    //static String accessToken = "BQBkmVAJBJmwTVDfpVhXRNUdSyaPhxMbaYO30nw9Jwlw78xjUXaQ7k6hg-0e_6vRk-LUQ09MdzYIDGoXz5Bi6yKuwZw3EPOhbB7jgA7YlFcoZ_nRL6vd5gLE7YENpcyoIvOBArrwiSofR6H7gIVUbZQINBWHPsiDViiNNgdP2RXcy43A223_2_7pXG69MLINLalBxpjFhx0MDOTi4k7cdKUvtflq_gifgbr0UuBxkFh1vEPXxDtDg_LHOtTTFidkwbevkVlzAYkt8akIV2OLeiHtI3sc-31yOlXEgT2_DodNf8GcQhcWP50E";
-
+    static String accessToken = "BQBvcgy9dowN4bjpdwye0507ubP5JZNra-Bwj9dPnNCiTdNH3RCadKiY2vUf7QoQMXkcMJLbL9jp1WpccS3pQzEtYl3cZjzcl10SZgjw81q0Lp5iP0rYfHUSoqoqvOgIIUprqTLIv-dJifG46gCJoeCte0SHp-NLJnM8TILff65hnTAidVaGFcvnOCVLbaeR4Ni-_hmoS1aUzrJBEI755c_AkdYuWuzEGDEppXHV5T9qcGoKfCkLSWSyju0RdRFfg5vJqs0xphCZ1uCAOXKTakt8N69ET_NqjYS6oVsOpx3EokQlv1nSQ5WS";
     public static Response post (Playlist requestPlaylist){
         return RestResource.post(USERS +"/" + ConfigLoader.getInstance().getUserId() +  PLAYLISTS, getToken() , requestPlaylist);
+        //return RestResource.post(USERS +"/" + ConfigLoader.getInstance().getUserId() +  PLAYLISTS, "BQBvcgy9dowN4bjpdwye0507ubP5JZNra-Bwj9dPnNCiTdNH3RCadKiY2vUf7QoQMXkcMJLbL9jp1WpccS3pQzEtYl3cZjzcl10SZgjw81q0Lp5iP0rYfHUSoqoqvOgIIUprqTLIv-dJifG46gCJoeCte0SHp-NLJnM8TILff65hnTAidVaGFcvnOCVLbaeR4Ni-_hmoS1aUzrJBEI755c_AkdYuWuzEGDEppXHV5T9qcGoKfCkLSWSyju0RdRFfg5vJqs0xphCZ1uCAOXKTakt8N69ET_NqjYS6oVsOpx3EokQlv1nSQ5WS" , requestPlaylist);
+
     }
     public static Response post (String token , Playlist requestPlaylist){
         return RestResource.post(USERS +"/"+ ConfigLoader.getInstance().getUserId() + PLAYLISTS , token , requestPlaylist);
     }
     public static Response get (String playlistId){
-        return RestResource.get(PLAYLISTS +"/"+ playlistId , getToken());
+       return RestResource.get(PLAYLISTS +"/"+ playlistId , getToken());
+       // return RestResource.get(PLAYLISTS +"/"+ playlistId , accessToken);
     }
     public static Response update( Playlist requestPlaylist , String playlistId){
         return RestResource.update(PLAYLISTS +"/"+ playlistId , getToken() , requestPlaylist);
+        //return RestResource.update(PLAYLISTS +"/"+ playlistId , accessToken , requestPlaylist);
     }
 }
